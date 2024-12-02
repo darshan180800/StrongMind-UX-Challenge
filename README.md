@@ -8,6 +8,11 @@ This repository contains the design and implementation of a pizza management app
 - **Manage Pizzas UI**: A visual interface to manage different pizzas, including pizza creation, updating, and deletion.
 - **Manage Toppings UI**: A dashboard for managing pizza toppings with easy identification and interaction.
 
+## How to Explore the Prototype
+
+Click the link below to explore the **PizzaMore UX Prototype** on Figma:
+
+[Explore the PizzaMore Prototype](https://www.figma.com/design/XYaz2n3pq7fulya0fqRiqV/Pizzamore-UX-Challenge?node-id=2043-49565&t=biCeY9xX9C0134Fi-1)
 
 ## Folder Structure
 
