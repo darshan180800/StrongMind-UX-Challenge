@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamore Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./assets/logo.png" />
+                <div>
+                    Pizzamore
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">
+                        <img class="logoS" src="./assets/Dashboard.png" />
+                        Dashboard</a></li>
+                <li><a href="#" class="active" style="background-color: aliceblue; color: black;">
+                        <img src="./assets/Inventory.png" />
+                        Inventory</a></li>
+                <li><a href="#">
+                        <img src="./assets/Notifications.png" />
+                        Notifications</a></li>
+                <li><a href="#">
+                        <img src="./assets/Settings.png" />
+                        Settings</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="./assets/Avtar.png" alt="John Mitchell" class="user-avatar">
+                <span>John Mitchell</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <div style="position: relative; width: 100%;">
+                    <img src="./assets/Search.png" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #aaa;"/>
+                   
+                    <input type="text" placeholder="Search Toppings" class="search-bar" style="padding-right: 40px;">
+                    
+                  </div>
+                <!-- <input type="text" placeholder="Search Toppings" class="search-bar"> -->
+                <button class="add-topping-btn">+ Add Topping</button>
+            </header>
+
+            <div class="toppings-inventory">
+                <div class="inventory-title">
+                    <div>
+                        <img src="./assets/Dashboard lg.png">
+                    </div>
+
+                    <div>
+                        <h2>Toppings Inventory</h2>
+                    </div>
+
+                </div>
+                <div class="filters">
+                    <div>
+                        <div class="all-topping">
+                            <div>
+                                <img src="./assets/Filter.png">
+
+                                All Toppings
+                            </div>
+
+                            <img src="./assets/down arrow.png">
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="stock-left">
+                            <div>
+                                <img src="./assets/Sort.png">
+
+                                Stock Left
+                            </div>
+
+                            <img src="./assets/down arrow.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="topping-list">
+                <!-- Individual Topping Card -->
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Cheddar.png" alt="Cheddar Cheese">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Cheese</span>
+                        <h2>Cheddar Cheese</h2>
+                        <p>05 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Basil leaves.png" alt="Cheddar Cheese">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Veggies</span>
+                        <h2>Basil Leaves</h2>
+                        <p>07 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Feta Cheese.png" alt="Cheddar Cheese">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Cheese</span>
+                        <h2>Feta Cheese</h2>
+                        <p>120 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Green Bell Peppers.png" alt="Cheddar Cheese">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Veggies</span>
+                        <h2>Green Bell Peppers</h2>
+                        <p>749 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Ham.png" alt="Ham">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Meat</span>
+                        <h2>Ham</h2>
+                        <p>969 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Pepperoni.png" alt="Pepperoni Cheese">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Meat</span>
+                        <h2>Pepperoni</h2>
+                        <p>86 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Mushrooms.png" alt="Mushrooms">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Veggies</span>
+                        <h2>Mushrooms</h2>
+                        <p>355 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Olives.png" alt="Olives">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Veggies</span>
+                        <h2>Olives</h2>
+                        <p>9583 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Onions.png" alt="Onions">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Veggies</span>
+                        <h2>Onions</h2>
+                        <p>98765 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <div class="topping-card">
+                    <div class="topping-photo">
+                        <img src="./assets/Parmesan.png" alt="Parmesan">
+                    </div>
+
+                    <div class="topping-details">
+                        <span class="category">Cheese</span>
+                        <h2>Parmesan Cheese</h2>
+                        <p>0 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div class="card-end">
+                        <img class="dot" src="./assets/dots.png"
+                            style="width: 16px;height: 20px;position: relative;left: 75%;">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+                </div>
+
+                <!-- <div class="topping-card">
+                    <img src="./assets/Cheddar.png" alt="Cheddar Cheese">
+                    <div class="topping-details">
+                        <span class="category">Cheese</span>
+                        <h2>Cheddar Cheese</h2>
+                        <p>00 units</p>
+                        <small>Restocked: 11/15/2024</small>
+                    </div>
+                    <div>
+                        <img src="./assets/dots.png">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+
+                </div> -->
+                <!-- Repeat for other toppings -->
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

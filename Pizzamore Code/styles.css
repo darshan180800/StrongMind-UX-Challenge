@@ -1,0 +1,278 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    /* height: 100vh; */
+    height: 100%;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 20%;
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* height: 125vh; */
+    /* height: 100vh; */
+   height: 100vh;
+   top:0;
+   left: 0;
+   position: fixed;
+
+  }
+  
+  .sidebar .logo {
+    margin-top: 2%;
+    margin-bottom: 20%;
+    display: flex; /* Align image and text side by side */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px; /* Add spacing around the logo */
+    background-color: #1a1a1a; /* Match the dark background */
+    gap: 12px; /* Add spacing between the logo and text */
+  }
+  
+  .sidebar .logo img{
+        width: 40px; 
+        height: 40px; 
+    object-fit: cover; 
+
+  }
+
+  .sidebar .logo div {
+    font-size: 1.4rem; /* Adjust the text size */
+    font-weight: 700; /* Use bold text for emphasis */
+    color: #f3f3f3; /* Set a light color to match the theme */
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+  }
+  
+  .sidebar .menu li a {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    padding: 4% 5%;
+    text-decoration: none;
+    color: #ccc;
+    border-radius: 5px;
+    gap: 12px; /* Add spacing between the logo and text */
+    font-size: large;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 48px;
+  }
+  
+  .sidebar .menu li a.active, .sidebar .menu li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .sidebar .user-info {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Main Content Styles */
+  .content {
+    flex: 1;
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+    margin-left: 20%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, .06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+  }
+  
+  .search-bar {
+    width: 366px;
+    padding: 10px 38px;
+    border: 1px solid #ccc;
+    border-radius: 55px;
+    font-size: medium;
+  }
+  
+  .add-topping-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 177px;
+    height: 48px;
+    font-size: large;
+  }
+  
+  /* Toppings Inventory Section */
+  .toppings-inventory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 1% 5% 2% 5%;
+  }
+
+  .inventory-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* .toppings-inventory h1 {
+   
+
+  } */
+  
+  .filters {
+    display: flex;
+    gap: 12px;
+    right: 0;
+  }
+
+  .all-topping{
+    width: 208.88px;
+    height: 48px;
+    border: 2;
+    border: solid;
+    border-color: #C1C1C1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .stock-left{
+    width: 208.88px;
+    height: 48px;
+    border: 2;
+    
+    border: solid;
+    border-color: #C1C1C1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .topping-list {
+    display: flex;
+    
+    margin: 1% 5% 2% 5%;
+    padding: 2% 5% 2% 5%;
+    border: 3px solid  #E0E0E0;
+    border-radius: 32px;
+    gap: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+
+  
+  /* Topping Card */
+  .topping-card {
+    background: #f5f5f5;
+    border: 2px solid #C1C1C1;
+    border-radius: 28px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    min-width: 407.28px;
+    width: 48%;
+    
+    height: 131px;
+  }
+  
+  .topping-photo{
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E0E0;
+    border: 1px solid #BDBDBD;
+    border-radius: 16px;
+  }
+
+  .topping-card img {
+   
+  }
+  
+  .topping-details {
+    flex: 1;
+  }
+  
+  .topping-details .category {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .topping-details h2 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .dot{
+    display: flex;
+    
+  }
+
+  .card-end{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .edit-btn {
+    background: #333;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10%;
+    position: relative;
+    bottom: -10px;
+  }
+  
+  small{
+    color: gray;
+  }
